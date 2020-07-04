@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="linked in home page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icn.png">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Linked in</title>
+  </head>
+
+  <body>
+    <div class='container' id='navbar '>
+      <nav>
+        <img class='linkedinpic' src="icn.png" alt="Linkedin">
+        <img class='userpic' onclick='modal()' id='m1'src="https://img.icons8.com/color/30/000000/user-male-circle.png"/>
+        <img class='bergericn' src="https://img.icons8.com/ios-glyphs/30/000000/content.png"/>
+        <form class="search" action="index.html" method="post">
+          <input type="text" name="search-bar" placeholder="search">
+        </form>
+        <img class='chat' src="https://img.icons8.com/small/30/000000/filled-chat.png"/>
+        <div class="glass">
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="nav-content">
+          <div class="home">
+            <i class="icn nav-hom fas fa-home" active></i>
+            <p class='nav-text'>home</p>
+          </div>
+          <div class="friends">
+            <i class="icn fas fa-user-friends"></i>
+            <p class='nav-text'>My Network</p>
+          </div>
+          <div class="breif">
+            <i class="icn fas fa-briefcase"></i>
+            <p class='nav-text'>Jobs</p>
+          </div>
+          <div class="msgs">
+            <i class="icn fas fa-comments"></i>
+            <p class='nav-text'>Messaging</p>
+          </div>
+          <div class="bell">
+            <i class="icn fas fa-bell"></i>
+            <p class='nav-text'>Notificatoins</p>
+          </div>
+          <div class="me">
+            <img onclick='modal()' id='m2' src="https://img.icons8.com/color/50/000000/user-male-circle.png" alt="pic">
+            <p class='nav-text'>Me<i class="icn fas fa-caret-down"></i></p>
+          </div>
+          <hr class='vertical-hr' style='margin:0;'>
+          <div class="work">
+            <i class="fab fa-buromobelexperte">
+              <p class='nav-text'>Work</p>
+            </i>
+          </div>
+          <a href="#"class='try'>Try Premium Free<br> for 1 month</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="middlepart container">
+      <div class="card zero">
+        <div class="top">
+          <p><strong>Prathiba srivasthav,Abhik Sarka&nbsp;</strong>and 71 other follow<strong>&nbsp;Linkedin </strong></p>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <hr class='first' />
+        <div class="middle-top">
+          <div class="into">
+            <p><img src="icn.png" alt="iconlin"><strong>Linkedin</strong> <br>
+              <p class='small-font'>
+                123,745,698 Followers <br> promoted
+              </p>
+            </p>
+          </div>
+          <a class='follow'>+&nbsp;Follow</a>
+        </div>
+        <p class='info'>Millions of members use LinkedIn Learning to advance in their career. Try for free today and see why you should use it too. </p>
+        <hr class='second'>
+        <div class="middle-img">
+          <img src="https://media-exp1.licdn.com/dms/image/sync/C4E18AQEC_aBV80ZYYQ/companyUpdate-article-image-shrink_627_1200/0?e=1596672000&v=beta&t=daX3dUFJ3fReYP2jEEX7CLyOenYN52NyeGqaEy8gg80" alt="">
+          <hr>
+          <div class="comments">
+            <div class="comment">
+              <img class='comment-icons' src="hand-ok.png" alt="">
+              <img class='comment-icons' src="celebrate.png" alt="">
+              <img class='comment-icons' src="heart.png" alt="">
+            </div>
+            <p class='likes-count'>896,909</p>
+            <a class='cmt' href="#">77&nbsp;Comment</a>
+          </div>
+        </div>
+        <hr class='third'>
+        <div class="middle-bottom">
+          <div class="hovers">
+            <div class="like">
+              <div class="like-hover" id='likhov0'>
+                <img src="like.svg" alt="like">
+                <img src="clap.svg" alt="clap">
+                <img src="support.svg" alt="clap">
+                <img src="love.svg" alt="clap">
+                <img src="idea.svg" alt="clap">
+                <img src="curios.svg" alt="clap">
+              </div>
+              <img src="https://img.icons8.com/pastel-glyph/64/000000/facebook-like.png" />
+              <p class='side-text'onmouseover="likeshov(0)" onmouseout="likhovdisp(0)">Like</p>
+            </div>
+            <div class="coment">
+              <img src="https://img.icons8.com/pastel-glyph/64/000000/comments.png" />
+              <p class='side-text' onclick="addcmt(0)">Comment</p>
+            </div>
+            <div class="share">
+              <img src="https://img.icons8.com/material-two-tone/24/000000/share-3.png" />
+              <p class='side-text'>Share</p>
+            </div>
+            <div class="send">
+              <img src="https://img.icons8.com/dotty/80/000000/filled-sent.png" />
+              <p class='side-text'>Send</p>
+            </div>
+          </div>
+        </div>
+        <div class="card send-comment" id='sendcmt0'>
+          <div class="form">
+            <img src="https://img.icons8.com/color/30/000000/user-male-circle.png"/>
+            <input class='add' type="text" placeholder="Add a Comment">
+          </div>
+          <p class='most'>Most relevant<i onclick="openrel(0)" class="icn fas fa-caret-down"></i></p>
+           <div class="most-rel" id='mrel0'>
+             <p class='rel'>
+               <img src="https://img.icons8.com/color/30/000000/user-male-circle.png"/>
+               <div class="rel-info-div">
+                 <p class='rel-info'>&emsp;Harish Raj Software Engineer Intern | JavaScript❣️ | Frontend Development | NodeJS | PWA | Technical Writer | Web Enthusiast &emsp;&emsp;🖤1d I don't use instagram.Waiting for your youtube upload💔</p>
+               </div>
+             </p>
+             <div class="like1">
+               <img src="https://img.icons8.com/pastel-glyph/64/000000/facebook-like.png" />
+               <p class='side-text'>Like</p>
+             </div>
+           </div>
+        </div>
+      </div>
+      <div class="card one">
+        <div class="middle-top">
+          <div class="into">
+            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8wR1f32mDKF3d7aPprvE1aonqGsR2BbYu5g&usqp=CAU" alt="iconlin">
+              <strong>Haily</strong> <br>
+              <p class='small-font'>
+                45,698 Followers <br> promoted
+              </p>
+            </p>
+          </div>
+          <a class='follow'>+&nbsp;Follow</a>
+        </div>
+        <p class='info'>Is Competitive Programming important or Learning Data Structures and Algorithm is sufficient? <br />
+          I am not a hardcore Competitive Programmer,but yes I did till that level,so that I can clear my Coding test.When I started my CP journey,It was very difficult for me to solve even problem A,But I kept on trying, and NOT IN DAYS,But in
+          months,I saw the difference.So stick to the process, It is IMPORTANT. </p>
+        <hr class='second'>
+        <div class="middle-img">
+          <div class="comments">
+            <div class="comment">
+              <img class='comment-icons' src="hand-ok.png" alt="">
+              <img class='comment-icons' src="celebrate.png" alt="">
+              <img class='comment-icons' src="heart.png" alt="">
+            </div>
+            <p class='likes-count'>896,909</p>
+            <a class='cmt' href="#">Comment</a>
+          </div>
+        </div>
+        <hr>
+          <div class="middle-bottom">
+            <div class="hovers">
+              <div class="like">
+                <div class="like-hover" id='likhov1'>
+                  <img src="like.svg" alt="like">
+                  <img src="clap.svg" alt="clap">
+                  <img src="support.svg" alt="clap">
+                  <img src="love.svg" alt="clap">
+                  <img src="idea.svg" alt="clap">
+                  <img src="curios.svg" alt="clap">
+                </div>
+                <img src="https://img.icons8.com/pastel-glyph/64/000000/facebook-like.png" />
+                <p class='side-text' onmouseover="likeshov(1)" onmouseout="likhovdisp(1)">Like</p>
+              </div>
+              <div class="coment" onclick="addcmt(1)">
+                <img src="https://img.icons8.com/pastel-glyph/64/000000/comments.png" />
+                <p class='side-text'>Comment</p>
+              </div>
+              <div class="share">
+                <img src="https://img.icons8.com/material-two-tone/24/000000/share-3.png" />
+                <p class='side-text'>Share</p>
+              </div>
+              <div class="send">
+                <img src="https://img.icons8.com/dotty/80/000000/filled-sent.png" />
+                <p class='side-text'>Send</p>
+              </div>
+            </div>
+          </div>
+        <div class="card send-comment" id='sendcmt1'>
+          <div class="form">
+            <img src="https://img.icons8.com/color/30/000000/user-male-circle.png"/>
+            <input class='add' type="text" placeholder="Add a Comment">
+          </div>
+          <p class='most'>Most relevant<i onclick="openrel(1)" class="icn fas fa-caret-down"></i></p>
+           <div class="most-rel" id='mrel1'>
+             <p class='rel'>
+               <img src="https://img.icons8.com/color/30/000000/user-male-circle.png"/>
+               <div class="rel-info-div">
+                 <p class='rel-info'>&emsp;Harish Raj Software Engineer Intern | JavaScript❣️ | Frontend Development | NodeJS | PWA | Technical Writer | Web Enthusiast &emsp;&emsp;🖤1d I don't use instagram.Waiting for your youtube upload💔</p>
+               </div>
+             </p>
+             <div class="like1">
+               <img src="https://img.icons8.com/pastel-glyph/64/000000/facebook-like.png" />
+               <p class='side-text'>Like</p>
+             </div>
+           </div>
+        </div>
+      </div>
+      <button class='see-more' name="button">See New Post</button>
+    </div>
+    <div class="container">
+      <footer>
+        <div class="fot-content">
+          <div class="hom">
+           <a href="#"><i class="fot fas fa-home"></i></a>
+          </div>
+          <div class="friend">
+          <a href="#"><i class="fot fas fa-user-friends"></i></a>
+          </div>
+          <div class="plus">
+            <a href="#"><i class="fot fas fa-plus"></i></a>
+          </div>
+          <div class="bel">
+           <a href="#"> <i class="fot fas fa-bell"></i></a>
+          </div>
+          <div class="brif">
+          <a href="#"><i class="fot fas fa-briefcase"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <img class='userpic6' src="https://img.icons8.com/color/30/000000/user-male-circle.png"/>
+      <div class='modalAnchor'><a class='modalA'>View Profile</a>&emsp;.&emsp;<a class='modalA'>Settings</a></div>
+    </div>
+    <div class="modal-body">
+      <ul>
+      <li><a class='modalulli' href='#'>Recent</a></li><hr>
+      <li><a class='modalulli' href='#'>Groups</a></li><hr>
+      <li><div class='events'>Events<br><a class='modalulli' href='#'>+&emsp;Create Events</a></div></li><hr>
+      <li><a class='modalulli' href='#'>Followed Hashtags</a></li><hr>
+      <li><a class='modalulli' href='#'>Discover More</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+    <script src="linkedin.js" charset="utf-8"></script>
+  </body>
+
+</html>
