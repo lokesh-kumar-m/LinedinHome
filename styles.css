@@ -585,7 +585,7 @@ li a:visited {
 li a:hover {
   color: #9896f2;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 520px) {
   html {
     width: fit-content;
   }
