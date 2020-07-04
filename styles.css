@@ -723,6 +723,12 @@ li a:hover {
     color: #bdbdca;
     cursor: pointer;
   }
+    .hom a:link, .friend a:link, .brif a:link, .plus a:link, .bel a:link {
+      color: #bdbdca;
+  }
+  .hom a:link {
+    color: #1f91ce;
+  }
   .hom a:visited, .friend a:visited, .brif a:visited, .plus a:visited, .bel a:visited {
     color: #bdbdca;
   }
