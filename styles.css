@@ -266,7 +266,7 @@ input:focus {
 .like-hover {
   display: none;
   position: absolute;
-  top: -65px;
+  top: -35px;
   left: -60px;
   padding: .35rem;
   background-color: white;
@@ -379,6 +379,7 @@ input:focus {
   font-weight: 300;
   font-size: smaller;
   padding-bottom: .59rem;
+  margin-left:3rem;
 }
 
 .most i {
