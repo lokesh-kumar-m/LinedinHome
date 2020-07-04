@@ -533,6 +533,7 @@ footer {
 
 .modalA, .modalulli {
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .modal-header img {
@@ -571,7 +572,10 @@ li:first-child {
   margin-right: 10%;
   font-size: larger;
   margin-bottom: .59rem;
- font-family: 'Roboto', sans-serif;;
+ font-family: 'Roboto', sans-serif;
+}
+li a:link {
+  color: #ef7e37;
 }
 .modalAnchor a:visited {
   color: black;
